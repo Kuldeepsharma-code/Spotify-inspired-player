@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify-web player:music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo">
+        <img src="spotify.png" alt="" style="background-color: green" />
+      </a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="search.html">Sign up</a></li>
+        <!-- <li><a href="library.html">Your Library</a></li> -->
+        <li>
+          <a href="login.html" class="login-button">Login</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Welcome to Spotify Web Player</h1>
+      <p>Discover and listen to your favorite music online.</p>
+      <!-- <a href="search.html" class="cta-button">Get Started</a> -->
+      <form action="" class="search">
+        <input
+          type="search"
+          name="search"
+          id="search-input"
+          placeholder="Search for songs, artists, or albums..."
+        />
+        <button type="submit"></button>
+      </form>
+
+      <div class="phone" id="phone"> 
+
+        <div class="camra"></div>
+
+        <div class="btn-section" id="btn">
+          <button class="profile" id="profile"><b>K</b> </button>
+          <button class="btn-all">All</button>
+          <div class="view-profile" id="views">
+            <div class="close" id="close"><img src="fast-forward.png" alt="" id="cancel"></div>
+          </div>
+        </div>
+        <!-- song-container -->
+        <div class="song-container" id="card">
+          <div class="card" id="bollywood">
+            <img src="https://picsum.photos/100?1" />
+            <h3>Bollywood Dance</h3>
+          </div>
+
+          <div class="card">
+            <img src="https://picsum.photos/100?2" />
+            <h3>Liked Songs</h3>
+          </div>
+
+          <div class="card">
+            <img src="https://picsum.photos/100?3" />
+            <h3>New Music Hindi</h3>
+          </div>
+
+          <div class="card">
+            <img src="https://picsum.photos/100?4" />
+            <h3>Love Forever</h3>
+          </div>
+
+          <div class="card">
+            <img src="https://picsum.photos/100?5" />
+            <h3>Reels Trending</h3>
+          </div>
+
+          <div class="card">
+            <img src="https://picsum.photos/100?6" />
+            <h3>Lofi Vibe</h3>
+          </div>
+        </div>
+        <!-- bollywood click → show dance, hide card/profile, change phone bg -->
+        <div class="dance-page" id="dance">
+            <h2>Bollywood Dance music</h2>
+            <div class="song-box" id="song"></div>
+            <div class="play" id="player">
+              <h2>Parda Hata Do</h2>
+              <!-- <button id="musicbtn" class="musicbtn">&#9654</button>
+              <audio id="music" src=""></audio> -->
+            </div>
+
+            <!-- music btn and audio tag  -->
+            <button id="musicbtn" class="musicbtn">&#9654</button>
+              <audio id="music" src="audio file/Parda Hata Do Ek Phool Do Mali 128 Kbps.mp3" type="audio/mpeg">
+              
+              </audio>
+
+            <div class="close" id="page">
+              <img src="fast-forward.png" alt="" id="cancel">
+            </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
